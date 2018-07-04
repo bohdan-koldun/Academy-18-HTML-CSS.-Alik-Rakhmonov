@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="uk">
+   <head>
+      <meta charset="UTF-8">
+      <title>Кіт Шредінгера. Блог :: Academy `18: HTML, CSS. Alik Rakhmonov</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="css/common.css">
+      <link rel="stylesheet" type="text/css" href="css/header.css">
+      <link rel="stylesheet" type="text/css" href="css/content.css">
+   </head>
+   <body class="grid-website">
+      <!-- Header Part -->
+      <div class="header">
+         <div class="logo">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><img src="img/cute-cat-logo.png" alt="Логотип"></a> 
+         </div>
+         <div class="search-header" id="search-header">
+            <form action="#" class="search-header-form">
+               <input type="text" placeholder="Пошук.." name="search">
+               <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+         </div>
+         <div class="mob-search-but" onclick="clickMobileSearch()"><i class="fa fa-search" id="mob-search-icon"></i></div>
+         <!-- Navigation bar with social media icons -->
+         <div class="social-icons">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+            <a href="#" class="google"><i class="fa fa-google"></i></a> 
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+         </div>
+         <!-- Navigation bar with social media icons -->
+         <div class="nav-desktop">
+            <a href="#">Милі Коти</a>
+            <a href="#">Цікаві Коти</a>
+            <a href="#">Вчені Коти</a>
+            <a href="#">Дивні Коти</a>
+            <a href="#">Про автора</a>
+         </div>
+         <div class="hamburger-menu" onclick="clickHamburgerMenu(this)">
+            <div class="hm-bar1"></div>
+            <div class="hm-bar2"></div>
+            <div class="hm-bar3"></div>
+         </div>
+         <!-- The Mobile Navigation Modal -->
+         <div id="mobileNav" class="modal-mobile-menu">
+            <div class="vertical-mobile-menu">
+               <a href="#">Милі Коти</a>
+               <a href="#">Цікаві Коти</a>
+               <a href="#">Вчені Коти</a>
+               <a href="#">Дивні Коти</a>
+               <a href="#">Про автора</a>
+            </div>
+         </div>
+      </div>
+      <!-- End Header Part -->
+      <!-- Main Part -->
+      <div class="main">
+         <h1>Блог кота Шредінгера</h1>
+         <hr>
+         <div class="articles-list">
+            <div class="article">
+               <img src="uploads/cat_office.jpg" alt="Кіт в офісі" style="width:100%">
+               <h4>В офісі повинен бути кіт</h4>
+               <p>10 доказів того, що в кожному офісі повинен бути кіт...</p>
+               <div class="article-data">
+                  <span class="date-published"><i class="fa fa-calendar"></i>12 травня 2018</span>
+                  <span class="rating"><i class="fa fa fa-star"></i>4</span>
+                  <span class="count-comments"><i class="fa fa-comments"></i> 232</span>
+               </div>
+            </div>
+            <div class="article">
+               <img src="uploads/cat_shred.jpg" alt="Кіт Шредінгера" style="width:100%">
+               <h4>Кіт Шредінгера живий</h4>
+               <p>Британські вчені довели, що кіт Шредінгера живий...</p>
+               <div class="article-data">
+                  <span class="date-published"><i class="fa fa-calendar"></i>5 травня 2018</span>
+                  <span class="rating"><i class="fa fa fa-star"></i>4.5</span>
+                  <span class="count-comments"><i class="fa fa-comments"></i> 146</span>
+               </div>
+            </div>
+            <div class="article">
+               <img src="uploads/bulka.jpg" alt="Кішка Булка" style="width:100%">
+               <h4>Коротка історія Булки</h4>
+               <p>Як звичайна кішка скрашує робочі дні програмістів...</p>
+               <div class="article-data">
+                  <span class="date-published"><i class="fa fa-calendar"></i>5 травня 2018</span>
+                  <span class="rating"><i class="fa fa fa-star"></i>4.5</span>
+                  <span class="count-comments"><i class="fa fa-comments"></i> 146</span>
+               </div>
+            </div>
+            <div class="article">
+               <img src="uploads/cat_warrior.jpg" alt="Кіт полковник Мяв" style="width:100%">
+               <h4>У США помер Полковник Мяу</h4>
+               <p>Нестало кота із самою довшою шерстю...</p>
+               <div class="article-data">
+                  <span class="date-published"><i class="fa fa-calendar"></i>5 травня 2018</span>
+                  <span class="rating"><i class="fa fa fa-star"></i>4.5</span>
+                  <span class="count-comments"><i class="fa fa-comments"></i> 146</span>
+               </div>
+            </div>
+            <div class="article">
+               <img src="uploads/cat_sewed.jpg" alt="Зшитий кіт" style="width:100%">
+               <h4>Як зшити кота?</h4>
+               <p>Зшити кота своїми руками зовсім нескладно....</p>
+               <div class="article-data">
+                  <span class="date-published"><i class="fa fa-calendar"></i>5 травня 2018</span>
+                  <span class="rating"><i class="fa fa fa-star"></i>4.5</span>
+                  <span class="count-comments"><i class="fa fa-comments"></i> 146</span>
+               </div>
+            </div>
+            <div class="article">
+               <img src="uploads/cat_shred.jpg" alt="Кіт Шредінгера" style="width:100%">
+               <h4>Кіт Шредінгера живий</h4>
+               <p>Британські вчені довели, що кіт Шредінгера живий...</p>
+               <div class="article-data">
+                  <span class="date-published"><i class="fa fa-calendar"></i>5 травня 2018</span>
+                  <span class="rating"><i class="fa fa fa-star"></i>4.5</span>
+                  <span class="count-comments"><i class="fa fa-comments"></i> 146</span>
+               </div>
+            </div>
+            <div class="article">
+               <img src="uploads/cat_office.jpg" alt="Кіт в офісі" style="width:100%">
+               <h4>В офісі повинен бути кіт</h4>
+               <p>10 доказів того, що в кожному офісі повинен бути кіт...</p>
+               <div class="article-data">
+                  <span class="date-published"><i class="fa fa-calendar"></i>12 травня 2018</span>
+                  <span class="rating"><i class="fa fa fa-star"></i>4</span>
+                  <span class="count-comments"><i class="fa fa-comments"></i> 232</span>
+               </div>
+            </div>
+            <div class="article">
+               <img src="uploads/bulka.jpg" alt="Кішка Булка" style="width:100%">
+               <h4>Коротка історія Булки</h4>
+               <p>Як звичайна кішка скрашує робочі дні програмістів...</p>
+               <div class="article-data">
+                  <span class="date-published"><i class="fa fa-calendar"></i>5 травня 2018</span>
+                  <span class="rating"><i class="fa fa fa-star"></i>4.5</span>
+                  <span class="count-comments"><i class="fa fa-comments"></i> 146</span>
+               </div>
+            </div>
+         </div>
+         <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+         </div>
+      </div>
+      <!-- End Main Part -->
+      <!-- Aside Part -->
+      <div class="aside">
+         <img src="img/cat-portrait.jpg" alt="Блогер Кіт Шредінгера" style="width: 100%;">
+         <h2>Кіт Шредінгера</h2>
+         <p>Я герой відомого уявного експерименту Ервіна Шредінгера, в якому я повинен перебуваю рівночасно у двох станах — живий і мертвий. Веду блог про інших цікавих котів.</p>
+         <div class="social-blogger-icons">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+            <a href="#" class="google"><i class="fa fa-google"></i></a> 
+            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+         </div>
+         <br>
+         <form action="#" class="form-subscribe">
+            <div class="form-container" style="background-color:white">
+               <input type="text" placeholder="Імя" name="name">
+               <input type="text" placeholder="Електрона пошта" name="email" required>
+               <label>
+               <input type="checkbox" checked="checked" name="subscribe"> Щотижнева розсилка
+               </label>
+            </div>
+            <div class="form-container">
+               <button type="submit" class="btn subscribe">Підписатися</button>
+            </div>
+         </form>
+         <br>
+         <form action="#" class="search-aside">
+            <input type="text" placeholder="Пошук.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+         </form>
+         <div class="tags">
+            <h4>Теги</h4>
+            <div class="tags-container">
+               <span>Коти</span><span>Шредінгер</span><span>Цікаво</span><span>Мило</span>
+               <span>Дивина</span><span>Тварини</span><span>Пушистий</span><span>Персидський</span>
+            </div>
+         </div>
+         <br>
+         <div class="comments">
+            <div class="photo"><img src="uploads/cat_comment1.jpg" alt="Рижий"></div>
+            <div class = "comment-text"><span>Рижий</span><br>Класний блог. Подобаються статті про цікавих котів!</div>
+            <div class="photo"><img src="uploads/cat_comment2.jpg" alt="Принц"></div>
+            <div class = "comment-text"><span>Принц</span><br>Люблю Блог кота Шредінгера! Зазвичай читаю блоги французських собак, але писанина автора даного блогу мені заходить.</div>
+         </div>
+      </div>
+      <!-- End Aside Part -->
+      <!-- FooterPart -->
+      <div class="footer">
+         <p>© 2018 Домашка Academy `18: HTML, CSS. Alik Rakhmonov</p>
+         <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><img src="img/cute-cat-logo.png" alt="Логотип"></a> 
+      </div>
+      <!-- End FooterPart -->
+      <!-- Include Scripts -->
+      <script src="js/main.js"></script>
+      <!-- End Include Scripts -->
+   </body>
+</html>

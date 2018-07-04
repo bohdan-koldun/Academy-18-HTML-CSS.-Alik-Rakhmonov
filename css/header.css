@@ -1,0 +1,340 @@
+.header {
+  display: grid;
+  grid-template-areas: 'logo search-header search-header socialicons' 'logo nav-desktop nav-desktop nav-desktop';
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+/* The logotype Style  */
+
+.logo {
+  grid-area: logo;
+}
+
+.logo img {
+  min-height: 100px;
+}
+
+
+/* end The logotype Style */
+
+
+/*  The social icons Style */
+
+.social-icons {
+  grid-area: socialicons;
+  text-align: right;
+}
+
+.social-icons a {
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.social-icons a:hover {
+  background-color: #000;
+}
+
+
+/* end The social icons Style */
+
+
+/* Hamburger Menu Style */
+
+.hamburger-menu {
+  grid-area: hamburger-menu;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hm-bar1,
+.hm-bar2,
+.hm-bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.hm-change .hm-bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.hm-change .hm-bar2 {
+  opacity: 0;
+}
+
+.hm-change .hm-bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/* end Hamburger Menu Style */
+
+
+/* Navigation Desktop Style */
+
+.nav-desktop {
+  grid-area: nav-desktop;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(90px, 150px));
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.nav-desktop a {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 5px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 18px;
+  border-right: 1px solid #ff5d00;
+}
+
+.nav-desktop a:last-child {
+  border-right: none;
+}
+
+.nav-desktop a:hover {
+  background-color: #000;
+}
+
+
+/* end Navigation Desktop Style */
+
+
+/* Search Header Style */
+
+.search-header {
+  grid-area: search-header;
+  text-align: right;
+  display: block;
+}
+
+.search-header input[type=text] {
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  width: 250px;
+}
+
+.search-header button {
+  padding: 12px 10px;
+  width: 70px;
+  background: linear-gradient(to left, rgb(243, 97, 82), rgb(245, 175, 25));
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.search-header button:hover {
+  background: #ccc;
+}
+
+.mob-search-but {
+  grid-area: mob-search-but;
+  display: none;
+}
+
+
+/* end Search Header Style */
+
+
+/* Hamburger Menu Style */
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hm-bar1,
+.hm-bar2,
+.hm-bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.hm-change .hm-bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.hm-change .hm-bar2 {
+  opacity: 0;
+}
+
+.hm-change .hm-bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/* end Hamburger Menu Style */
+
+
+/* The Modal Mobile Menu Style */
+
+.modal-mobile-menu {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+.vertical-mobile-menu {
+  width: 300px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vertical-mobile-menu a {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-mobile-menu a:hover {
+  background-color: #36aba1;
+}
+
+.vertical-mobile-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+/* Add Animation Modal Menu*/
+
+@-webkit-keyframes slideIn {
+  from {
+    left: -300px;
+    opacity: 0
+  }
+  to {
+    left: 0;
+    opacity: 1
+  }
+}
+
+@keyframes slideIn {
+  from {
+    left: -300px;
+    opacity: 0
+  }
+  to {
+    left: 0;
+    opacity: 1
+  }
+}
+
+
+/* end the Modal Mobile Menu Styles*/
+
+
+/* Responsive Mobile Styles*/
+
+@media (max-width: 800px) {
+  .header {
+    grid-template-areas: 'hamburger-menu hamburger-menu mob-search-but mob-search-but' 'logo logo logo logo' 'search-header search-header search-header search-header';
+  }
+  .logo {
+    text-align: center;
+  }
+  .social-icons {
+    display: none;
+  }
+  .nav-desktop {
+    display: none;
+  }
+  .hamburger-menu {
+    display: inline-block;
+  }
+  .search-header {
+    display: none;
+  }
+  .search-header input[type=text] {
+    margin: 0;
+    grid-column: 1/4;
+    width: 100%;
+  }
+  .search-header-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .search-header button {
+    padding: 0;
+    grid-column: 4;
+    width: 100%;
+    margin-right: 0;
+  }
+  .mob-search-but {
+    grid-area: mob-search-but;
+    display: block;
+    padding: 3px;
+    text-align: right;
+    color: #ffffff;
+    font-size: 32px;
+  }
+}
+
+
+/* end Responsive Mobile Styles*/
+
+
+/* Responsive Tablets Styles*/
+
+@media (max-width: 1024px) and (min-width: 801px) {
+  .search-header input[type=text] {
+    width: 200px;
+  }
+  .social-icons a {
+    width: 30px;
+    padding: 5px;
+  }
+  .search-header button {
+    width: 60px;
+  }
+  .nav-desktop a {
+    font-size: 14px;
+  }
+}
+
+
+/* end Responsive Tablets Styles*/

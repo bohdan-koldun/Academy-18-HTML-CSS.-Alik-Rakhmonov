@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f6ff;
+}
+
+
+/* The grid website */
+
+.grid-website {
+  display: grid;
+  grid-template-areas: 'header header header header' 'main main main aside' 'footer footer footer footer';
+  grid-template-columns: 1fr 1fr 1fr minmax(250px, 300px);
+  grid-gap: 10px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+/* Style and grid the header */
+
+.header {
+  grid-area: header;
+  background: linear-gradient(to right, rgb(67, 206, 162), rgb(24, 90, 157));
+  padding: 30px;
+}
+
+
+/* Style the main column */
+
+.main {
+  grid-area: main;
+  background-color: #ffffff;
+  box-shadow: 0 0 4.8px 0.3px rgba(46, 46, 46, 0.14);
+  padding: 20px 20px 60px;
+}
+
+
+/* Style the aside column */
+
+.aside {
+  grid-area: aside;
+  background-color: #d9e1f8;
+  box-shadow: 0 0 4.8px 0.3px rgba(46, 46, 46, 0.14);
+  padding: 10px;
+}
+
+
+/* Style the footer */
+
+.footer {
+  grid-area: footer;
+  background: linear-gradient(to right, rgb(19, 106, 138), rgb(38, 120, 113));
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+/* --------------------------- */
+
+
+/* S0cial icons */
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+/* ----------------------- */
+
+
+/* Responsive Mobile */
+
+@media (max-width: 800px) {
+  .grid-website {
+    grid-template-areas: 'header header header header' 'main main main main' 'aside aside aside aside' 'footer footer footer footer';
+  }
+}
