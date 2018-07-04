@@ -38,6 +38,12 @@ hr {
 
 .article span {
   font-size: 14px;
+  color: #1a5f9d;
+}
+
+.article span:hover {
+  font-size: 14px;
+  color: #000000;;
 }
 
 .article-data {
